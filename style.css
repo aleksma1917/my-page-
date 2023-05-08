@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Roboto:ital@0;1&display=swap");
+
+body {
+  background-color: rgb(168, 200, 228);
+  color: black;
+  /*font-size: 16px;
+font-weight: normal;
+font-family: 'Roboto', sans-serif; можно описать двумя способами*/
+  font: normal 16px "Roboto", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+
+a:active {
+  color: darkgreen;
+}
+
+.Avatar {
+  width: 200px;
+  border-radius: 90%;
+  box-shadow: 10px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Avatar:hover {
+  border-radius: 50%;
+  box-shadow: 20px 10px 10px rgba(174, 69, 216, 0.25);
+}
+
+.hat {
+  margin-bottom: 30px;
+  display: flex;
+}
+@media (max-width:700px){
+    .hat {
+        text-align: center;
+        display: block;
+    }
+}
+
+.hat p {
+  color: rgb(8, 0, 0);
+  font-size: 14px;
+  margin: 0;
+  font-style: italic;
+  text-decoration: none;
+  /* text-transform uppercase; */
+  /*letter-spacing: 1px;*/
+  word-spacing: 5px;
+}
+
+/*BOX MODEL*/
+.container {
+  padding-top: 30px;
+  max-width: 750px;
+  margin: auto;
+}
+
+/*.social {
+    background: rgb(145, 230, 105);
+    padding: 15px;
+    border: 5px solid red;
+    border-bottom: dotted red ;
+    border-top-width: 10px;
+    border-right-color:yellow ;
+    /*margin-left
+    margin-right
+    margin-top
+    margin-bottom*/
+/* margin: 20px;
+    /* padding 15px 40px;
+    padding 10px 15px 31px 22px; */
+/*}
+/*.box-model  div{
+background: black;
+height: 200px;
+width: 25%;
+float: left;
+border: 4 px solid salmon;
+box-sizing: border-box;
+}
+
+.box-model div{
+}*/
+
+.bg-yellow:hover {
+  box-shadow: 5px 5px 5px #f09c9c;
+}
+.bg-green:hover {
+  box-shadow: 5px 5px 5px #f09c9c;
+}
+.bg-red:hover {
+  box-shadow: 5px 5px 5px #f09c9c;
+}
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.card {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.card h2 {
+  margin-bottom: 30px;
+}
+
+.list {
+  padding: auto;
+}
+
+.list li {
+  color: #86898f;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+  color: #86898f;
+}
+
+.works {
+  list-style: none;
+  padding: 0;
+}
+.works li {
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+  text-align: center;
+}
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #0a0a0a;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #b33e7e;
+  color: black;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+.row {
+  display: flex;
+  margin-bottom: 20px;
+}
+.row > .form-group {
+  width: 50%;
+}
+.row > .form-group:first-child {
+  margin-right: 20px;
+}
+.tag {
+  margin-left: 40px;
+}
+.tag h4 {
+  margin-bottom: 10px;
+}
+.con {
+  width: 100%;
+}
+
+.space {
+  margin-bottom: 250px;
+  background: transparent;
+}
+.btn {
+  margin-top: 20px;
+  margin-left: 40%;
+  padding: 15px 20px;
+  background: #0a0a0a;
+  color: white;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  color: #3eb36f;
+  border: solid 2px #3eb36f;
+}
+
+/*POSITION*/
+
+.position {
+  position: relative;
+  margin-top: 40px;
+  border: 4px solid black;
+  padding: 20px;
+  height: 300px;
+}
+.box {
+  /*position: absolute;*/
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 120px;
+  bottom: 70px;
+  size: 30%;
+  border-radius: 100%;
+}
+@media (max-width :700px){
+    .box{
+        display: none;
+    }
+}
